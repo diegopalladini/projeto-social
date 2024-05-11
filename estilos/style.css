@@ -21,7 +21,7 @@ body {
 main {
     position: relative;
     height: 100vh;
-    background-color: green;
+
 }
 
 section#telefone {
@@ -34,6 +34,7 @@ section#telefone {
     width: 311px;
     /* background-color: blue; pra ver exatamente onde está essa section na tela*/
     background: url('../imagens/frame-iphone.png') no-repeat;
+   
 }
 
 iframe#tela {
@@ -42,4 +43,23 @@ iframe#tela {
     left: 22px;
     height: 471px;
     width: 269px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+    box-sizing: border-box; /*para botões das redes não se mexerem verticalmente qdo um for selecionado no hover*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px); /*para mexer lateralmente levemente qdo selecionado*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);/*para sombra acompanhar essa movimentação*/
+    transition: transform .5s; /*para a transform 2 linhas acima ocorrer de maneira mais animada*/
 }
